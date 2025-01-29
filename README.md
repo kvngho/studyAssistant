@@ -1,5 +1,8 @@
 # Learning Assistant Chrome Extension
 
+![](question.png)
+![](answer.png)
+
 ## Introduction
 AI Learning Assistant is a Chrome extension that allows you to select text on web pages and get answers to your questions using OpenAI's GPT model.
 
