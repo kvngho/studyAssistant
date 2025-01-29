@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "AI 학습 도우미",
+  "version": "1.0",
+  "description": "선택한 텍스트에 대해 OpenAI API를 통해 질문하고 답변을 받을 수 있는 확장 프로그램",
+  "permissions": [
+    "contextMenus",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://api.openai.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+} 
